@@ -160,6 +160,7 @@ int main () //a funcao principal, sempre irá rodar primeiro
 		printf("\t1 - Registrar nomes \n");
 		printf("\t2 - Consultar nomes \n");
 		printf("\t3 - Deletar nomes \n\n");
+		printf("\t4 - Sair do sistema \n\n");
 		printf("Opcao: "); //fim do menu
 	
 			scanf("%d", &opcao); // armazenando a escolha do usuario. Pausa o programa ate o usuario dar uma resposta.
@@ -180,7 +181,11 @@ int main () //a funcao principal, sempre irá rodar primeiro
     		case 3:
     		deletar();
 			break;
-				
+			
+			case 4:
+    		printf("Obrigado por utilizar o nosso sistema. Até breve! \n\n");
+    		return 0; // para retornar o valor zero e sair do sistema
+			break;	
 				
 			default: //quando ele escolhe uma opcao n mapeada, uma opcao q n existe
 			printf("Essa opção não está disponível. Retorne ao MENU !");
